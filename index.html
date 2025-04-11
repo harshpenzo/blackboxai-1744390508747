@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMitra - AI Voice Therapy for Mental Wellness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7F56D9',
+                        secondary: '#F4EBFF',
+                        dark: '#101828',
+                        light: '#F9FAFB',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #7F56D9 0%, #9747FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold gradient-text">MindMitra</a>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-primary transition-colors">Features</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-primary transition-colors">Pricing</a>
+                    <a href="login.html" class="text-gray-600 hover:text-primary transition-colors">Log in</a>
+                    <a href="signup.html" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-all transform hover:scale-105">
+                        Try for free
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center fade-in" style="animation-delay: 0.2s">
+                <h1 class="text-5xl md:text-7xl font-bold text-dark mb-6">
+                    Your AI Voice Therapist for
+                    <span class="gradient-text">Mental Wellness</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Experience therapy like never before with our AI-powered voice companion. 
+                    Talk naturally, get instant support, and improve your mental well-being.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="signup.html" class="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary/90 transition-all transform hover:scale-105 pulse">
+                        Start free trial
+                    </a>
+                    <a href="#demo" class="border border-gray-300 text-gray-700 px-8 py-4 rounded-lg text-lg font-semibold hover:border-primary hover:text-primary transition-all">
+                        Watch demo
+                    </a>
+                </div>
+            </div>
+
+            <!-- Demo Preview -->
+            <div class="mt-20 relative fade-in" style="animation-delay: 0.4s">
+                <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-2xl floating">
+                    <img src="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg" alt="MindMitra Demo" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-8">
+                        <div class="text-white">
+                            <h3 class="text-2xl font-semibold mb-2">Voice Therapy Demo</h3>
+                            <p class="text-white/80">Experience a natural conversation with your AI therapist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in" style="animation-delay: 0.6s">
+                <h2 class="text-3xl font-bold text-dark mb-4">Why Choose MindMitra?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Experience therapy that's personalized, accessible, and effective
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm fade-in" style="animation-delay: 0.8s">
+                    <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-microphone text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2">Natural Voice Conversations</h3>
+                    <p class="text-gray-600">
+                        Speak naturally and get therapeutic responses in real-time through voice interaction
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm fade-in" style="animation-delay: 1s">
+                    <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-brain text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2">AI-Powered Insights</h3>
+                    <p class="text-gray-600">
+                        Get personalized therapeutic insights based on your conversations and progress
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm fade-in" style="animation-delay: 1.2s">
+                    <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-lock text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2">Private & Secure</h3>
+                    <p class="text-gray-600">
+                        Your conversations are encrypted and completely private
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Voice Demo Section -->
+    <div id="demo" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in" style="animation-delay: 1.4s">
+                    <h2 class="text-3xl font-bold text-dark mb-6">
+                        Experience Voice Therapy
+                    </h2>
+                    <p class="text-gray-600 mb-8">
+                        Try our voice therapy feature right now. Click the microphone and start speaking 
+                        to experience how MindMitra responds to your voice.
+                    </p>
+                    <button id="startVoice" class="bg-primary text-white px-6 py-3 rounded-lg flex items-center space-x-2 hover:bg-primary/90 transition-all transform hover:scale-105">
+                        <i class="fas fa-microphone"></i>
+                        <span>Start Speaking</span>
+                    </button>
+                </div>
+                <div class="bg-secondary rounded-2xl p-8 fade-in" style="animation-delay: 1.6s">
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                                <i class="fas fa-robot text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-dark">MindMitra AI</h3>
+                                <p class="text-sm text-gray-600">Your therapy companion</p>
+                            </div>
+                        </div>
+                        <div id="conversation" class="space-y-4">
+                            <p class="text-gray-600">
+                                Hi! I'm your AI therapist. How are you feeling today?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="py-20 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="fade-in" style="animation-delay: 1.8s">
+                <h2 class="text-3xl font-bold text-white mb-4">Ready to Start Your Journey?</h2>
+                <p class="text-white/90 mb-8 max-w-2xl mx-auto">
+                    Join thousands of users who have improved their mental well-being with MindMitra
+                </p>
+                <a href="signup.html" class="inline-block bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition-all transform hover:scale-105">
+                    Get Started Free
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 text-gray-400">
+                <div>
+                    <h3 class="text-white font-semibold mb-4">MindMitra</h3>
+                    <p>Your AI companion for mental wellness</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Features</a></li>
+                        <li><a href="#" class="hover:text-white">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white">Voice Therapy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">About</a></li>
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                        <li><a href="#" class="hover:text-white">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Privacy</a></li>
+                        <li><a href="#" class="hover:text-white">Terms</a></li>
+                        <li><a href="#" class="hover:text-white">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2024 MindMitra. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
