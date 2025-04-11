@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - MindMitra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6B6B',
+                        secondary: '#4ECDC4',
+                        accent: '#45B7D1',
+                        dark: '#2C3E50',
+                        light: '#F7F9FC',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-primary">MindMitra</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="login.html" class="text-dark hover:text-primary transition-colors">log in</a>
+                    <a href="signup.html" class="bg-primary text-white px-4 py-2 rounded-full hover:bg-primary/90 transition-colors">sign up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="pt-32 pb-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-dark mb-6">
+                    making mental health support <span class="text-primary">accessible to all</span>
+                </h1>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    we're bridging the gap between traditional therapy and modern technology, 
+                    with a touch of Indian wisdom and warmth
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission Section -->
+    <div class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-dark mb-6">our mission</h2>
+                    <p class="text-gray-600 mb-6">
+                        In a country where mental health is often overlooked and therapy is seen as a taboo, 
+                        we're here to change the narrative. MindMitra combines the wisdom of Indian culture 
+                        with cutting-edge AI technology to provide support that's both accessible and relatable.
+                    </p>
+                    <p class="text-gray-600">
+                        Just like a trusted friend who's always there to listen, MindMitra offers support 
+                        in a way that resonates with our cultural context - whether it's dealing with 
+                        family expectations, career pressure, or relationship challenges.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" 
+                             alt="Team collaboration" 
+                             class="object-cover w-full h-full rounded-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works -->
+    <div class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-dark mb-12 text-center">how it works</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user-plus text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">sign up</h3>
+                    <p class="text-gray-600">
+                        Create your account in less than 2 minutes. No lengthy forms, 
+                        no complicated process - ekdum simple!
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-comments text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">start chatting</h3>
+                    <p class="text-gray-600">
+                        Connect with MindMitra anytime, anywhere. Share your thoughts 
+                        in English, Hindi, or Hinglish - jo aapko comfortable lage.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">feel better</h3>
+                    <p class="text-gray-600">
+                        Experience the relief of sharing your feelings and getting 
+                        support that's tailored to your needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-dark mb-12 text-center">why choose MindMitra</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-clock text-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">24/7 availability</h3>
+                    <p class="text-gray-600">
+                        No appointments needed. Get support whenever you need it, 
+                        even at 3 AM when anxiety hits.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">complete privacy</h3>
+                    <p class="text-gray-600">
+                        Your conversations are encrypted and completely private. 
+                        What happens on MindMitra, stays on MindMitra.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-rupee-sign text-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">affordable pricing</h3>
+                    <p class="text-gray-600">
+                        Quality mental health support shouldn't break the bank. 
+                        Our plans start at just ₹299/month.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">AI-powered insights</h3>
+                    <p class="text-gray-600">
+                        Advanced AI technology that understands Indian context and 
+                        provides personalized support.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-language text-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">multilingual support</h3>
+                    <p class="text-gray-600">
+                        Express yourself freely in English, Hindi, or Hinglish. 
+                        No language barriers here!
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-smile text-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">culturally aware</h3>
+                    <p class="text-gray-600">
+                        Understanding of Indian family dynamics, social pressures, 
+                        and cultural nuances.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="py-20 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">ready to start your journey?</h2>
+            <p class="text-xl text-white/90 mb-8">join thousands of others who've found their peace of mind</p>
+            <a href="signup.html" class="inline-block bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/90 transition-transform hover:scale-105">
+                get started free
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-white/70">
+                <div>
+                    <h3 class="text-white font-semibold mb-4">MindMitra</h3>
+                    <p>Your AI companion for mental wellness</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">About Us</a></li>
+                        <li><a href="#" class="hover:text-white">How it Works</a></li>
+                        <li><a href="#" class="hover:text-white">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Connect</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white">Support</a></li>
+                        <li><a href="#" class="hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-white/10 text-center text-white/70">
+                <p>&copy; 2024 MindMitra. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
